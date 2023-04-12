@@ -6,12 +6,18 @@
     }
     .inorup {
        
-        margin-left: 50%;
+        margin-left: 46.2%;
         padding: 1%;
         display: flex;
         margin-top: 6%;
         height: 10%;
         width: 10%;
+        color: #494949;
+        font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'National2-Medium';
     }
 
     .bigpare {
@@ -22,37 +28,85 @@
     }
 
     .Logo {
-    margin-left: 51.6%;
-    margin-top: 3%;
+        text-align: center;
+        margin-top: 2.5%;
 
     }
     .message {
-        margin-left: 39%;
         margin-top: 3%; 
         font-weight: bold;
+        text-align: center;
+        font-family: 'National2CondensedWeb-Medium';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: #202124;
     }
 
     .termsandcon {
-        margin-left: 30%;
+        margin-left: 24.5%;
         margin-top: 2%; 
-        font-size: small;
+        font-family: 'National 2 Regular';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 20px;
+         color: #202124;
     }
 
     .phoneNo{
-        margin-left: 30%;
+        margin-left: 24.5%;
         margin-top: 4%; 
         
     }
     .sendcod{
-        margin-left: 50.5%;
+        margin-left: 40%;
+        margin-right: 40% ;
+        text-align: center;
         margin-top: 2.5%; 
+        border: none;
+        outline: none;
+        border-radius: 200px;
+        cursor: pointer;
+        color: #ffffff;
+        font-size: 16px;
+        background-color: #202124;
+        display: flexbox;
+        height: 12px;
+        padding: 0.8%;
     }
+
+
     .or{
-        margin-left: 53.5%;
+        text-align: center;
         margin-top: 2.5%;   
     }
 
+    .skipp{
+        margin-left: 28%;
+        margin-top: 2.5%;  
+        width: 45%;
+        border-style: ridge;
+        align-items: center;
+        outline: none;
+        border-radius: 66px;
+        border: 1px solid #202124;
+        cursor: pointer;
+    
+    }
+
     .skip{
-        margin-left: 49.2%;
-        margin-top: 2.5%;   
+        margin-left: 37.5%;
+        margin-top: 2%;  
+        margin-bottom: 2%;
+        width: 45%;
+        background: #ffffff;
+        color: #202124;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 30px;
+        font-family: 'National 2 Regular';
     }
