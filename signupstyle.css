@@ -1,0 +1,58 @@
+
+    .body {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .inorup {
+       
+        margin-left: 50%;
+        padding: 1%;
+        display: flex;
+        margin-top: 6%;
+        height: 10%;
+        width: 10%;
+    }
+
+    .bigpare {
+     display: contents;
+       height: 100%;
+       width: 90%;
+        background-color:black;
+    }
+
+    .Logo {
+    margin-left: 51.6%;
+    margin-top: 3%;
+
+    }
+    .message {
+        margin-left: 39%;
+        margin-top: 3%; 
+        font-weight: bold;
+    }
+
+    .termsandcon {
+        margin-left: 30%;
+        margin-top: 2%; 
+        font-size: small;
+    }
+
+    .phoneNo{
+        margin-left: 30%;
+        margin-top: 4%; 
+        
+    }
+    .sendcod{
+        margin-left: 50.5%;
+        margin-top: 2.5%; 
+    }
+    .or{
+        margin-left: 53.5%;
+        margin-top: 2.5%;   
+    }
+
+    .skip{
+        margin-left: 49.2%;
+        margin-top: 2.5%;   
+    }
