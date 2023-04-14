@@ -1,4 +1,8 @@
 let addCartArr = JSON.parse(localStorage.getItem("CartData")) || [];
+
+document.querySelector('#items').addEventListener('scroll',(e)=>{
+    console.log(e);
+})
 let itemsArr = [
 {
     Image: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000373.jpg?ver=16.58",
@@ -6,7 +10,7 @@ let itemsArr = [
     Varity: "Non veg",
     Price: "₹699.05",
     Offer: "Flat 39% off on 10 pcs of Hot & Crispy Chicken",
-    Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
     Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
 },
 {
@@ -15,7 +19,7 @@ let itemsArr = [
     Varity: "Non veg",
     Price: "₹350.48",
     Offer: "Flat 55% off on 12 pc chicken strips served with 4 delicious dips",
-    Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
     Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
 },
 {
@@ -24,7 +28,7 @@ let itemsArr = [
     Varity: "Non veg Serves 2",
     Price: "₹619.05",
     Offer: "Save 22% on 5 chicken Leg Pieces, 2 dips, 1 Medium Fries & a Pepsi PET [serves 2 ]",
-    Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
     Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
 },
 {
@@ -33,7 +37,6 @@ let itemsArr = [
     Varity: "Non veg Serves 2-3",
     Price: "₹599.05",
     Offer: "Flat Rs. 115 off on combo of 2pc Hot & Crispy, 2 pc Smoky Red Chicken & Large Popcorn [serves 2-3]",
-    Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
     Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
 },
 {
@@ -42,7 +45,7 @@ let itemsArr = [
     Varity: "Non veg Serves 3-4",
     Price: "₹899.05",
     Offer: "Leg before any wicket! Save 29% on 10 Leg Pieces & 4 Dips [serves 3-4]",
-    Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
     Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
 },
 {
@@ -51,7 +54,7 @@ let itemsArr = [
     Varity: "Non veg Serves 2",
     Price: "₹499.05",
     Offer: "Save Rs. 141 on this favorite combo of 5 Leg Pieces & 2 Dips [serves 2]",
-    Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
     Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
 
 },
@@ -61,7 +64,7 @@ let itemsArr = [
     Varity: "Non veg Serves 2-3",
     Price: "₹699.05",
     Offer: "Save 35% on signature bucket of 4pc Hot & crispy, 6 Wings, 4 strips, 3 Dips & Pepsi PET [serves 2-3 ]",
-    Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
     Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
   
 },
@@ -71,7 +74,7 @@ let itemsArr = [
     Varity: "Non veg Serves 2- 3",
     Price: "₹719.05",
     Offer: "Save 28% on 6pc Hot & Crispy Chicken, 6 Hot Wings & 2 dips [serves 2- 3]",
-    Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
     Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
 },
 {
@@ -80,7 +83,7 @@ let itemsArr = [
     Varity: "Non veg Serves 2",
     Price: "₹479.05",
     Offer: "Save Rs. 71 on 4 Hot Wings, 2 Chicken Strips, Reg Popcorn, medium fries & Pepsi PET [serves 2 ]",
-    Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
     Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
 },
 {
@@ -89,7 +92,7 @@ let itemsArr = [
     Varity: "Non veg Serves 2- 3",
     Price: "₹684.76",
     Offer: "Save 29% on this variety bucket of 4pc Hot & Crispy chicken & 4pc Smoky Red chicken [serves 2- 3 ]",
-    Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
     Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
 },
 {
@@ -98,7 +101,7 @@ let itemsArr = [
     Varity: "Non veg Serves 2",
     Price: "₹499.05",
     Offer: "Flat 20% off on 5pc Smoky red grilled chicken [serves 2]",
-    Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
     Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
 },
 {
@@ -107,7 +110,7 @@ let itemsArr = [
     Varity: "Non veg Serves 3-4",
     Price: "₹748.57",
     Offer: "Save Rs. 182 & get 8pc signature Hot & crispy chicken [serves 3-4]",
-    Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
     Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
 },
 {
@@ -116,7 +119,7 @@ let itemsArr = [
     Varity: "Non veg Serves 2-3",
     Price: "₹619.05",
     Offer: "Flat 10% off on 6pc signature Hot & crispy chicken [serves 2-3]",
-    Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
     Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
 },
 {
@@ -125,7 +128,7 @@ let itemsArr = [
     Varity: "Non veg Serves 2",
     Price: "₹448.57",
     Offer: "Save 22% & Pick any - 5pc Hot & Crispy OR 10 chicken strips OR 2 Large Popcorn [serves 2]",
-    Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+    Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
     Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
 }
 ]
@@ -178,7 +181,7 @@ let newLuanchArr = [
         Varity: "Non veg Serves 2",
         Price: "₹448.57",
         Offer: "Two ka crunch, in one munch- for 2! Combo of 2 new Popcorn Nachos & a Pepsi PET [serves 2]",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -187,7 +190,7 @@ let newLuanchArr = [
         Varity: "Non veg Serves 1-2",
         Price: "₹379.05",
         Offer: "New Popcorn Nachos, 3pc Wings & 1 Pepsi PET in this delightful snack combo! [serves 1-2]",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -196,7 +199,7 @@ let newLuanchArr = [
         Varity: "Non veg",
         Price: "₹199.05",
         Offer: "Crunchy popcorn & 2 delicious sauces paired with masala Doritos. 2 ka crunch, in 1 munch!",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -205,7 +208,7 @@ let newLuanchArr = [
         Varity: "Non veg Serves 2-3",
         Price: "₹639.05",
         Offer: "Dipping combo of 10pc chicken strips & our new Dynamite Spicy Mayo Sauce Bottle [serves 2-3]",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -214,7 +217,7 @@ let newLuanchArr = [
         Varity: "Non veg Serves 2-3",
         Price: "₹639.05",
         Offer: "Dipping combo of 10pc chicken strips & our new Nashville Hot Pepper Sauce Bottle [serves 2-3]",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -223,7 +226,7 @@ let newLuanchArr = [
         Varity: "Non veg Serves 3",
         Price: "₹779.05",
         Offer: "6pc Hot & Crispy Chicken paired with our new Dynamite Spicy Mayo Sauce Bottle [serves 3]",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -232,7 +235,7 @@ let newLuanchArr = [
         Varity: "Non veg Serves 3",
         Price: "₹779.05",
         Offer: "6pc Hot & Crispy Chicken paired with our new Nashville Hot Pepper Sauce Bottle [serves 3]",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -241,7 +244,7 @@ let newLuanchArr = [
         Varity: "Non veg Serves 3-4",
         Price: "₹879.05",
         Offer: "3pc Hot & Crispy, 3 Wings, 3 Strips, Large Popcorn & our new Dynamite Mayo Bottle [serves 3-4]",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -250,7 +253,7 @@ let newLuanchArr = [
         Varity: "Non veg Serves 3-4",
         Price: "₹879.05",
         Offer: "3pc Hot & Crispy, 3 Wings, 3 Strips, Large Popcorn & our new Nashville Bottle [serves 3-4]",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -259,7 +262,7 @@ let newLuanchArr = [
         Varity: "Non veg",
         Price: "₹189.52",
         Offer: "Nashville in a bottle! Our signature hot, peppery sauce which pairs well with all things KFC.",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -268,7 +271,7 @@ let newLuanchArr = [
         Varity: "Non veg",
         Price: "₹189.52",
         Offer: "Spicy, punchy mayoàbottled up just for you & your favorite KFC! Our signature launch.",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
 ]
@@ -324,7 +327,7 @@ let ChickenRollsArr = [
         Varity: "Non veg Serves 2",
         Price: "₹550.48",
         Offer: "Deal combo of 2 New Double Chicken Rolls, Large Fries, 2 Dips & 1 Pepsi PET [serves 2]",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -333,7 +336,7 @@ let ChickenRollsArr = [
         Varity: "Non veg Serves 2",
         Price: "₹470.48",
         Offer: "Deal combo of 2 New Single Chicken Rolls, Large Fries, 2 Dips & 1 Pepsi PET [serves 2]",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -342,7 +345,7 @@ let ChickenRollsArr = [
         Varity: "Non veg Serves 1",
         Price: "₹380.00",
         Offer: "Deal combo of 1 New Double Chicken Roll, Large Fries, 2 Dips & 1 Pepsi PET [serves 1]",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -351,7 +354,7 @@ let ChickenRollsArr = [
         Varity: "Non veg Serves 1",
         Price: "₹340.00",
         Offer: "Deal combo of 1 New Single Chicken Roll, Large Fries, 2 Dips & 1 Pepsi PET [serves 1]",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -360,7 +363,7 @@ let ChickenRollsArr = [
         Varity: "Non veg Serves 2",
         Price: "₹335.24",
         Offer: "2 portions of the new Double Chicken Roll at a deal price[serves 2]",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -369,7 +372,7 @@ let ChickenRollsArr = [
         Varity: "Non veg Serves 2",
         Price: "₹255.24",
         Offer: "2 portions of the new Single Chicken Roll at a deal price [serves 2]",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -378,7 +381,7 @@ let ChickenRollsArr = [
         Varity: "Non veg Serves 1",
         Price: "₹170.48",
         Offer: "New street style roll with double chicken strips, onions and 2 spicy sauces [serves 1]",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -387,7 +390,7 @@ let ChickenRollsArr = [
         Varity: "Non veg Serves 1",
         Price: "₹130.48",
         Offer: "New street style roll with single chicken strip, onions and 2 spicy sauces[serves 1]",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     }
 ]
@@ -442,7 +445,7 @@ let biryaniArr = [
         Varity: "Non veg Serves 2-3",
         Price: "₹740.00",
         Offer: "Large portions of Biryani rice with 2 pc Hot & Crispy, 2 Gravies, 4 Strips & Pepsi PET [serves 2-3]",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -451,7 +454,7 @@ let biryaniArr = [
         Varity: "Non veg Serves 2-3",
         Price: "₹740.00",
         Offer: "Large portions of Biryani rice with 2 pc Smoky Red, 2 Gravies, Med Popcorn & Pepsi PET [serves 2-3]",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -460,7 +463,7 @@ let biryaniArr = [
         Varity: "Non veg Serves 2-3",
         Price: "₹690.48",
         Offer: "Save 33% on signature bucket of 4pc Hot & crispy, 6 Wings, 4 strips, 2 Dips & Pepsi PET [serves 2-3 ]",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -469,7 +472,7 @@ let biryaniArr = [
         Varity: "Non veg Serves 2",
         Price: "₹475.24",
         Offer: "Large portions of Biryani rice served with 2 pc Hot & Crispy Chicken & 2 Gravies [serves 2]",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -478,7 +481,7 @@ let biryaniArr = [
         Varity: "Non veg Serves 2",
         Price: "₹475.24",
         Offer: "Large portions of Biryani rice served with Chicken Popcorn & 2 Gravies [serves 2]",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -487,7 +490,7 @@ let biryaniArr = [
         Varity: "Non veg Serves 2",
         Price: "₹475.24",
         Offer: "Large portions of Biryani rice served with 2 pc Smoky Red Chicken & 2 Gravies [serves 2]",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -496,7 +499,7 @@ let biryaniArr = [
         Varity: "Non veg Serves 1",
         Price: "₹229.52",
         Offer: "Hyderabadi style Biryani rice served with 1 pc Hot & Crispy & Spicy Gravy [serves 1]",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -505,7 +508,7 @@ let biryaniArr = [
         Varity: "Non veg Serves 1",
         Price: "₹229.52",
         Offer: "Hyderabadi style Biryani rice served with Popcorn & Spicy Gravy [serves 1]",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -514,7 +517,7 @@ let biryaniArr = [
         Varity: "Non veg Serves 1",
         Price: "₹229.52",
         Offer: "Hyderabadi style Biryani rice served with 1 pc Smoky Red & Spicy Gravy [serves 1]",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -578,7 +581,7 @@ let BoxMealArr = [
         Varity: "Non veg",
         Price: "₹189.52",
         Offer: "A Box with your favorites! Get 1 pc Hot & Crispy, 2 Hot Wings & 1 Chicken Strip at a deal price",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -587,7 +590,7 @@ let BoxMealArr = [
         Varity: "Non veg",
         Price: "₹313.33",
         Offer: "A classic deal for Zinger lovers : Get 1 Classic Zinger, 2 Hot Wings, 1 Veg Patty & Pepsi",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -596,7 +599,7 @@ let BoxMealArr = [
         Varity: "Non veg",
         Price: "₹313.33",
         Offer: "A deal for the Tandoori lovers : Get 1 Tandoori Zinger, 2 Hot Wings, 1 Veg Patty & Pepsi",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -605,7 +608,7 @@ let BoxMealArr = [
         Varity: "Non veg",
         Price: "₹328.57",
         Offer: "Biryani lovers unite : Get 1 Popcorn Biryani Bucket with gravy, 2 Hot Wings & Pepsi",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -614,7 +617,7 @@ let BoxMealArr = [
         Varity: "Non veg",
         Price: "₹313.33",
         Offer: "A deal for the Veg Zinger lovers : Get 1 Veg Zinger, 2 Veg Patties & a Pepsi",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -678,7 +681,7 @@ let BurgerArr = [
         Varity: "Non veg",
         Price: "₹228.57",
         Offer: "2 delicious chicken value burgers - at a deal price",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -687,7 +690,7 @@ let BurgerArr = [
         Varity: " Veg",
         Price: "₹158.10",
         Offer: "2 delicious veg value burgers - at a deal price",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -696,7 +699,7 @@ let BurgerArr = [
         Varity: "Non veg",
         Price: "₹519.05",
         Offer: "Deal combo of 2 chicken value burgers, 2 pc Hot & Crispy, 2 dips & a chilled Pepsi PET",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -705,7 +708,7 @@ let BurgerArr = [
         Varity: "Non veg",
         Price: "₹199.05",
         Offer: "Chicken zinger with a delicious tandoori sauce",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -714,7 +717,7 @@ let BurgerArr = [
         Varity: "Non veg",
         Price: "₹348.57",
         Offer: "Best-seller combo of classic chicken zinger & tandoori zinger",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -723,7 +726,7 @@ let BurgerArr = [
         Varity: "Non veg",
         Price: "₹189.52",
         Offer: "Signature burger made with a crunchy chicken fillet, veggies & a delicious mayo sauce",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -732,7 +735,7 @@ let BurgerArr = [
         Varity: "Non veg",
         Price: "₹499.05",
         Offer: "Share 2 Classic Chicken Zingers & a Medium Popcorn in this delightful combo for 2",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -795,6 +798,8 @@ function Burger(BurgerArr){
         bucket.setAttribute("class", "box")
         bucket.append(image,innerBox,add);
         document.querySelector("#Burgers").append(bucket);
+
+        
     })
 }
 
@@ -805,7 +810,7 @@ let HomeSpecialArr = [
         Varity: "Non veg Serves 1-2",
         Price: "₹450.48",
         Offer: "Best of snacks with a Medium Popcorn, 4 strips, 1 dip & a chilled Pepsi Black [serves 1-2]",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -814,7 +819,7 @@ let HomeSpecialArr = [
         Varity: "Non veg Serves 1-2",
         Price: "₹450.48",
         Offer: "Enjoy 2pc Hot & Crispy Chicken, 4 wings , 2 dips & a chilled Pepsi Black [serves 1-2]",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -823,7 +828,7 @@ let HomeSpecialArr = [
         Varity: "Non veg Serves 2-3",
         Price: "₹740.00",
         Offer: "Large portions of Biryani rice with 2 pc Hot & Crispy, 2 Gravies, 4 Strips & Pepsi PET [serves 2-3]",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -832,7 +837,7 @@ let HomeSpecialArr = [
         Varity: "Non veg Serves 1",
         Price: "₹344.76",
         Offer: "Favorite combo of Classic Zinger Burger, Medium Fries & a chilled Pepsi Black [serves 1]",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -841,7 +846,7 @@ let HomeSpecialArr = [
         Varity: "Non veg Serves 2-3",
         Price: "₹740.00",
         Offer: "Large portions of Biryani rice with 2 pc Smoky Red, 2 Gravies, Med Popcorn & Pepsi PET [serves 2-3]",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -850,7 +855,7 @@ let HomeSpecialArr = [
         Varity: "Non veg Serves 1",
         Price: "₹419.05",
         Offer: "Go solo with 1 pc Hot & Crispy, 3 strips, Medium Fries & a chilled Pepsi Black [serves 1]",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -859,7 +864,7 @@ let HomeSpecialArr = [
         Varity: "Non veg Serves 3",
         Price: "₹788.57",
         Offer: "Save 21% on 4pc Hot & Crispy, 4 Wings, 6 Chicken Strips & 2 dips [serves 3]",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -868,7 +873,7 @@ let HomeSpecialArr = [
         Varity: "Non veg Serves 3",
         Price: "₹828.57",
         Offer: "Family Deal of 3 chicken zingers, a medium popcorn, medium fries & a chilled Pepsi PET [serves 3]",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     }
 ]
@@ -922,7 +927,7 @@ let SnacksArr = [
         Varity: "Non veg",
         Price: "₹299.05",
         Offer: "Crowd-favorite combo of 2pc Hot & Crispy chicken with Medium Fries",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -931,7 +936,7 @@ let SnacksArr = [
         Varity: "Non veg",
         Price: "₹319.05",
         Offer: "Large Chicken Popcorn with Med Fries - at a deal price",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -940,7 +945,7 @@ let SnacksArr = [
         Varity: "Non veg Serves 1-2",
         Price: "₹339.05",
         Offer: "Save 13% on this mingle of 4 Wings, 2 Strips & a Reg Popcorn [serves 1-2]",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -949,7 +954,7 @@ let SnacksArr = [
         Varity: "Non veg",
         Price: "₹428.57",
         Offer: "4 pcs of signature Hot & crispy chicken at a deal price",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -958,7 +963,7 @@ let SnacksArr = [
         Varity: "Non veg",
         Price: "₹228.57",
         Offer: "Signature bite-sized boneless chicken, with special spices",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -967,7 +972,7 @@ let SnacksArr = [
         Varity: "Non veg",
         Price: "₹164.76",
         Offer: "Signature bite-sized boneless chicken, with special spices",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -976,7 +981,7 @@ let SnacksArr = [
         Varity: "Non veg",
         Price: "₹115.24",
         Offer: "Signature bite-sized boneless chicken, with special spices",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -994,7 +999,7 @@ let SnacksArr = [
         Varity: "Non veg",
         Price: "₹248.57",
         Offer: "Spicy, red, grilled chicken",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -1003,7 +1008,7 @@ let SnacksArr = [
         Varity: "Veg",
         Price: "₹99.05",
         Offer: "Jazz up your meal with Crispy Fries!",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -1012,7 +1017,7 @@ let SnacksArr = [
         Varity: "Non veg",
         Price: "₹229.52",
         Offer: "Signature Hot & crispy chicken",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -1021,7 +1026,7 @@ let SnacksArr = [
         Varity: "Non veg",
         Price: "₹259.05",
         Offer: "Tender, juicy, signature boneless chicken strips",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -1030,7 +1035,7 @@ let SnacksArr = [
         Varity: "Non veg",
         Price: "₹124.76",
         Offer: "Spicy, red, grilled chicken",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -1039,7 +1044,7 @@ let SnacksArr = [
         Varity: "Non veg",
         Price: "₹164.76",
         Offer: "Seasoned, signature KFC chicken wings",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -1048,7 +1053,7 @@ let SnacksArr = [
         Varity: "Non veg",
         Price: "₹164.76",
         Offer: "Tender, juicy, signature boneless chicken strips",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -1093,7 +1098,7 @@ let SnacksArr = [
         Varity: "Non veg",
         Price: "₹189.52",
         Offer: "Nashville in a bottle! Our signature hot, peppery sauce which pairs well with all things KFC.",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -1102,7 +1107,7 @@ let SnacksArr = [
         Varity: "Non veg",
         Price: "₹189.52",
         Offer: "Spicy, punchy mayoàbottled up just for you & your favorite KFC! Our signature launch.",
-        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.1b0fc8fd.svg",
+        Dot: "https://online.kfc.co.in/static/media/Non_veg_dot_Icon.d975d1f9.svg",
         Add: "https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
     },
     {
@@ -1276,6 +1281,8 @@ function Beverages(BeveragesArr){
         document.querySelector("#Beverages").append(bucket);
     })
 }
+
+
 
 
 function addToCart(elem){

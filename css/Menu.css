@@ -13,11 +13,17 @@
 }
 #items{
     /* border: 1px solid blue; */
-    width: 78%;
+    width: 77%;
     height: 600px;
     overflow-y: scroll;
-    gap:20px;
+    gap:10px;
+    /* overflow-y: scroll; */
 }
+
+
+/* #items::-webkit-scrollbar {
+    display: none;
+  } */
 /* #items::-webkit-scrollbar { 
     display: none; 
 } */
