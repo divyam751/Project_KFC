@@ -30,6 +30,7 @@
     .Logo {
         text-align: center;
         margin-top: 2.5%;
+        cursor: pointer;
 
     }
     .message {
