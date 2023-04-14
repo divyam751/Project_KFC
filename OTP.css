@@ -1,137 +1,415 @@
-.body {
-    display: flex;
-    flex-wrap: wrap;
+@media (min-width: 1024px) {
+    .body {
+      display: flex;
+      flex-wrap: wrap;
+      
+    }
     
-}
-
-.Logo {
-    text-align: center;
-    margin-top: 2.5%;
-    cursor: pointer;
-
-}
-.message {
-    margin-top: 3%; 
-    font-weight: bold;
-    text-align: center;
-    font-family: 'National2CondensedWeb-Medium';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 20px;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    color: #202124;
-}
-
-.inorup {
-       
-    margin-left: 46.6%;
-    padding: 1%;
-    display: flex;
-    margin-top: 6%;
-    height: 10%;
-    width: 10%;
-    color: #494949;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
-    font-family: 'National2-Medium';
-}
-
-.message2 {
-    margin-top: 2.5%; 
-    margin-bottom: 1vw;
-    font-size: 14px;
-    text-align: center;
-    font-family: 'National 2 Regular';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: -0.1px;
-    color: #494949;
-}
-
-
-.changeNo {
-    margin-top: 1.5vw;
-    text-align: center;
-    font-family: 'National2-Medium';
-    color: #494949;
-    background: none;
-    border: none;
-    text-decoration: underline;
-    cursor: pointer;
-    outline: none;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: -0.1px;
-}
-
-.Resend {
-    margin-top: 3%; 
-    text-align: center;
-    font-family: 'National2-Medium';
-    color: #494949;
-    background: none;
-    border: none;
-    text-decoration: underline;
-    cursor: pointer;
-    outline: none;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: -0.1px;
-}
-.sendcod {
-    margin-left: 46.8%;
-    margin-top: 2%;
-    padding: 10px 40px;
-    background-color: #dbdbdb;
-    border-radius: 200px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    text-align: center;
-}
-
-.otpbx{
-    width: 2.85%;
-    margin: 0 auto;
-    margin-left: 42.45%;
-    border: none;
-    border-bottom: 2px solid #494949;
-    outline: none;
-    text-align: center;
-    font-family: 'National2CondensedWeb-Medium';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 44px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #202124;
-}
-.otpbx2{
-    width: 2.85%;
-    margin: 0 auto;
-    margin-left: 0.75%;
-    border: none;
-    border-bottom: 2px solid #494949;
-    outline: none;
-    text-align: center;
-    font-family: 'National2CondensedWeb-Medium';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 44px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #202124;
-}
+    .Logo {
+      text-align: center;
+      margin-top: 2.5%;
+      cursor: pointer;
+    
+    }
+    .message {
+      margin-top: 3%; 
+      font-weight: bold;
+      text-align: center;
+      font-family: 'National2CondensedWeb-Medium';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 20px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: #202124;
+    }
+    
+    .inorup {
+         
+      margin-left: 46.6%;
+      padding: 1%;
+      display: flex;
+      margin-top: 6%;
+      height: 10%;
+      width: 10%;
+      color: #494949;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      font-family: 'National2-Medium';
+    }
+    
+    .message2 {
+      margin-top: 2.5%; 
+      margin-bottom: 1vw;
+      font-size: 14px;
+      text-align: center;
+      font-family: 'National 2 Regular';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: -0.1px;
+      color: #494949;
+    }
+    
+    
+    .changeNo {
+      margin-top: 1.5vw;
+      text-align: center;
+      font-family: 'National2-Medium';
+      color: #494949;
+      background: none;
+      border: none;
+      text-decoration: underline;
+      cursor: pointer;
+      outline: none;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: -0.1px;
+    }
+    
+    .Resend {
+      margin-top: 3%; 
+      text-align: center;
+      font-family: 'National2-Medium';
+      color: #494949;
+      background: none;
+      border: none;
+      text-decoration: underline;
+      cursor: pointer;
+      outline: none;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: -0.1px;
+    }
+    .sendcod {
+      margin-left: 46.8%;
+      margin-top: 2%;
+      padding: 10px 40px;
+      background-color: #dbdbdb;
+      border-radius: 200px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      text-align: center;
+    }
+    
+    .otpbx{
+      width: 2.85%;
+      margin: 0 auto;
+      margin-left: 42.45%;
+      border: none;
+      border-bottom: 2px solid #494949;
+      outline: none;
+      text-align: center;
+      font-family: 'National2CondensedWeb-Medium';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 44px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #202124;
+    }
+    .otpbx2{
+      width: 2.85%;
+      margin: 0 auto;
+      margin-left: 0.75%;
+      border: none;
+      border-bottom: 2px solid #494949;
+      outline: none;
+      text-align: center;
+      font-family: 'National2CondensedWeb-Medium';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 44px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #202124;
+    }
+    }
+    @media (min-width: 600px) and (max-width: 1024px) {
+      .body {
+        display: flex;
+        flex-wrap: wrap;
+        
+      }
+      .Logo {
+        text-align: center;
+        margin-top: 12vw;
+        cursor: pointer;
+      
+      }
+      .message {
+        margin-top: 12vw; 
+        font-weight: bold;
+        text-align: center;
+        font-family: 'National2CondensedWeb-Medium';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2vw;
+        line-height: 2vw;
+        letter-spacing: 0.005vw;
+        text-transform: uppercase;
+        color: #202124;
+      }
+      
+      .inorup {
+           
+        margin-left: 43.5vw;
+        padding: 1%;
+        display: flex;
+        margin-top: 1vw;
+        height: 10vw;
+        width: 10vw;
+        color: #494949;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.53vw;
+        line-height: 2.4vw;
+        font-family: 'National2-Medium';
+      }
+      
+      .message2 {
+        margin-top: 12vw; 
+        margin-bottom: 1vw;
+        font-size: 14px;
+        text-align: center;
+        font-family: 'National 2 Regular';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: -0.1px;
+        color: #494949;
+      }
+      
+      
+      .changeNo {
+        margin-top: 4vw;
+        text-align: center;
+        font-family: 'National2-Medium';
+        color: #494949;
+        background: none;
+        border: none;
+        text-decoration: underline;
+        cursor: pointer;
+        outline: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: -0.1px;
+      }
+      
+      .Resend {
+        margin-top: 7vw; 
+        text-align: center;
+        font-family: 'National2-Medium';
+        color: #494949;
+        background: none;
+        border: none;
+        text-decoration: underline;
+        cursor: pointer;
+        outline: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: -0.1px;
+      }
+      .sendcod {
+        margin-left: 43vw;
+        margin-top: 8vw;
+        padding: 10px 40px;
+        background-color: #dbdbdb;
+        border-radius: 200px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        text-align: center;
+      }
+      
+      .otpbx{
+        width: 9vw;
+        margin: 0 auto;
+        margin-left: 29vw;
+        border: none;
+        border-bottom: 2px solid #494949;
+        outline: none;
+        text-align: center;
+        font-family: 'National2CondensedWeb-Medium';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 44px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #202124;
+      }
+      .otpbx2{
+        width: 9vw;
+        margin: 0 auto;
+        margin-left: 0.75%;
+        border: none;
+        border-bottom: 2px solid #494949;
+        outline: none;
+        text-align: center;
+        font-family: 'National2CondensedWeb-Medium';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 44px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #202124;
+      }
+    }
+    
+    @media (max-width: 600px) {
+      .body {
+        display: flex;
+        flex-wrap: wrap;
+        
+      }
+      .Logo {
+        text-align: center;
+        margin-top: 12vw;
+        cursor: pointer;
+      
+      }
+      .message {
+        margin-top: 12vw; 
+        font-weight: bold;
+        text-align: center;
+        font-family: 'National2CondensedWeb-Medium';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 8vw;
+        line-height: 2vw;
+        letter-spacing: 0.005vw;
+        text-transform: uppercase;
+        color: #202124;
+      }
+      
+      .inorup {
+           
+        margin-left: 43.5vw;
+        padding: 1%;
+        display: flex;
+        margin-top: 1vw;
+        height: 15vw;
+        width: 15vw;
+        color: #494949;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 4vw;
+        line-height: 2.5vw;
+        font-family: 'National2-Medium';
+      }
+      
+      .message2 {
+        margin-top: 12vw; 
+        margin-bottom: 1vw;
+        font-size: 14px;
+        text-align: center;
+        font-family: 'National 2 Regular';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: -0.1px;
+        color: #494949;
+      }
+      
+      
+      .changeNo {
+        margin-top: 4vw;
+        text-align: center;
+        font-family: 'National2-Medium';
+        color: #494949;
+        background: none;
+        border: none;
+        text-decoration: underline;
+        cursor: pointer;
+        outline: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: -0.1px;
+      }
+      
+      .Resend {
+        margin-top: 7vw; 
+        text-align: center;
+        font-family: 'National2-Medium';
+        color: #494949;
+        background: none;
+        border: none;
+        text-decoration: underline;
+        cursor: pointer;
+        outline: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: -0.1px;
+      }
+      .sendcod {
+        margin-left: 34vw;
+        margin-top: 8vw;
+        padding: 10px 40px;
+        background-color: #dbdbdb;
+        border-radius: 200px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        text-align: center;
+      }
+      
+      .otpbx{
+        width: 14vw;
+        margin: 0 auto;
+        margin-left: 15vw;
+        border: none;
+        border-bottom: 2px solid #494949;
+        outline: none;
+        text-align: center;
+        font-family: 'National2CondensedWeb-Medium';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 44px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #202124;
+      }
+      .otpbx2{
+        width: 14vw;
+        margin-left: 0.75%;
+        border: none;
+        border-bottom: 2px solid #494949;
+        outline: none;
+        text-align: center;
+        font-family: 'National2CondensedWeb-Medium';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 44px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #202124;
+      }
+    }
