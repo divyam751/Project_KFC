@@ -14,7 +14,7 @@ function verify() {
     let i3 = document.getElementById('box3').value;
 
     if (i0 == '1' && i1 == '2' && i2 == '3' && i3 == '4') {
-      window.location.href = '/welcome.html'
+      window.location.href = 'welcome.html'
        } else {
          alert('Incorrect OTP');
        }
