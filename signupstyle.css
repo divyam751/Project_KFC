@@ -72,7 +72,6 @@
         letter-spacing: -0.1px;
         color: #202124;
         padding-bottom: 0.7%;
-        box-sizing: none;
         text-indent: 0px;
         text-shadow: none;
         display: inline-block;
@@ -82,10 +81,11 @@
 
 
     .sendcod{
-        margin-left: 45%;
+        margin-left: 46%;
         margin-right: 45% ;
         text-align: center;
         margin-top: 2.5%; 
+        height: 8%;
         border: none;
         outline: none;
         border-radius: 200px;
@@ -94,8 +94,7 @@
         font-size: 16px;
         background-color: #202124;
         display: flexbox;
-        height: 12px;
-        padding: 0.85%;
+        padding: 1%;
     }
 
 
