@@ -13,11 +13,16 @@
             <div class = "in">Sign In /</div> 
             <div class = "up"> Sign up</div>
         </div>
-        <div class="Logo"> <img src="https://th.bing.com/th/id/OIP.Pr2D6m9KbQqNHWujIJNEmQHaCG?pid=ImgDet&rs=1" alt = "kfc logo"  width="80" height="20"> </div>
-        <div class="message" role="heading" aria-level="1"> LET’S SIGN IN OR CREATE ACCOUNT WITH YOUR PHONE NUMBER! </div>
+        <div class="Logo"> <img src="https://th.bing.com/th/id/OIP.Pr2D6m9KbQqNHWujIJNEmQHaCG?pid=ImgDet&rs=1" alt = "kfc logo"  width="80" height="18"> </div>
+        <div class="message" role="heading"> LET’S SIGN IN OR CREATE ACCOUNT WITH YOUR PHONE NUMBER! </div>
         <form>
-        <div class="phoneNo"> <input type="tel" placeholder="Phone Number*" required></div>
-        <div class="termsandcon"> By “logging in to KFC”, you agree to our Privacy Policy and Terms & Conditions.</div>
+        <div id="phoneLabel" class="phoneLabel" style="visibility: hidden;">Phone Number</div>   
+        <div class="phoneNo"> <input type="tel" placeholder="Phone Number*" autocomplete="tel" required ="" maxlength="10" onkeypress="return isNumberPhone()" oninput="validatePhoneNumber()" required style="color: rgb(255, 46, 0);"></div>
+        <div id="phoneNumberValidationLabel" style="display: none; background: transparent;" ;>
+            <div class="errorImg"> <img src="/auth/resources/jdsrg/login/kfcIndiaLoginUIDev_2022_08_04/images/Error.svg" alt="error"></div>
+            <div class="errorText" id="phoneErrorText">Please enter a valid 10-digit  mobile number</div>
+     </div>
+        <div class="termsandcon"> By “logging in to KFC”, you agree to our <u><b>Privacy Policy </b></u> and <u><b>Terms & Conditions.</b></u></div>
         <div class="sendcod"onclick= sendotp()> Send Me a Code</div>
         </form>
         <div class="or"> or </div>

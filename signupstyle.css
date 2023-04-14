@@ -14,16 +14,16 @@
         width: 10%;
         color: #494949;
         font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
-    font-family: 'National2-Medium';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        font-family: 'National2-Medium';
     }
 
     .bigpare {
-     display: contents;
-       height: 100%;
-       width: 90%;
+        display: contents;
+        height: 100%;
+        width: 90%;
         background-color:black;
     }
 
@@ -59,12 +59,31 @@
 
     .phoneNo{
         margin-left: 24.5%;
-        margin-top: 4%; 
-        
+        margin-top: 4%;
+        width: 45%; 
+        border: none;
+        border-bottom: 1px solid #202124;
+        outline: none;
+        font-family: 'National 2 Regular';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: -0.1px;
+        color: #202124;
+        padding-bottom: 0.7%;
+        box-sizing: none;
+        text-indent: 0px;
+        text-shadow: none;
+        display: inline-block;
+        background-color: field;
+        cursor: text;
     }
+
+
     .sendcod{
-        margin-left: 40%;
-        margin-right: 40% ;
+        margin-left: 45%;
+        margin-right: 45% ;
         text-align: center;
         margin-top: 2.5%; 
         border: none;
@@ -76,7 +95,7 @@
         background-color: #202124;
         display: flexbox;
         height: 12px;
-        padding: 0.8%;
+        padding: 0.85%;
     }
 
 
