@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="cartPage.css">
+    <script src="https://kit.fontawesome.com/b48f583750.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/423552aade.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>MY CART</h1>
+    <div id="body">
+        <div id="products">
+            <table>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+        <div id="total_price">
+            <div id="total_items">
+                <h3> <span id="items"></span> ITEMS</h3>
+            </div>
+            <div>
+                <button>Check</button>
+            </div>
+        </div>
+    </div>
+    <div id="payment">
+    <button onclick="window.location.assig('payment.html')">Proceed to Payment</button>
+    </div>
+</body>
+</html>
+
+<script>
+    var cart = JSON.parse(localStorage.getItem("cartProducts")) || [];
+    console.log(cart);
+
+    document.querySelector("button").addEventListener("click", check);
+    if(cart.length == 0)
+        document.querySelector("body").textContent = "Add some Items to cart";
+    else{
+        var cartArr = [];
+        myCart();
+        displayCart();
+        calculateTotal();
+    }
+    
+    function myCart(){
+        cart.map(function(ele, index){
+            var num = 1;
+            var list = {
+                image_url: ele.image_url,
+                name: ele.name,
+                num: 1,
+                price: ele.price,
+            }
+            cartArr.push(list);
+        });
+        console.log(cartArr);
+        localStorage.setItem("cartArr", JSON.stringify(cartArr));
+    }
+
+    function displayCart(){
+        document.querySelector("tbody").textContent = "";
+        cartArr.map(function(ele, index){
+           var tr = document.createElement("tr");
+
+           var div1 = document.createElement("div");
+           div1.setAttribute("class", "column");
+
+           var image = document.createElement("img");
+           image.setAttribute("src", ele.image_url);
+           image.setAttribute("alt", ele.name);
+
+           var div = document.createElement("div");
+           div.setAttribute("class", "qtnButtons");
+
+           var inc = document.createElement("button");
+           inc.textContent = "+";
+           inc.setAttribute("class", "round");
+           inc.addEventListener("click", function(){
+            increase(index);
+           });
+
+           var q = document.createElement("button");
+           q.textContent = ele.num;
+           q.setAttribute("id", "box");
+
+           var dec = document.createElement("button");
+           dec.textContent = "-";
+           dec.setAttribute("class", "round");
+           dec.addEventListener("click", function(){
+            decrease(index);
+           });
+
+           div.append(dec, q, inc);
+           div1.append(image, div);
+
+           var div2 = document.createElement("div");
+           div2.setAttribute("class", "column");
+           div2.setAttribute("Id", "column");
+
+           var name = document.createElement("h3");
+           name.textContent = ele.name;
+
+           var seller = document.createElement("h5");
+           seller.textContent = "Seller - "
+
+           var price = document.createElement("h3");
+           price.textContent = ele.num + " x " + ele.price + " = " + (ele.num*ele.price);
+
+           var div = document.createElement("div");
+           div.setAttribute("class", "row")
+
+           var list = document.createElement("h3");
+           list.textContent = "SAVE FOR LATER";
+           list.addEventListener("click", function(){
+            addToWishlist(ele);
+           });
+
+           var del = document.createElement("h3");
+           del.textContent = "Remove";
+           del.addEventListener("click", function(){
+            deleteRow(index);
+           });
+
+           div.append(list,  del);
+           div2.append(name, seller, price, div);
+
+           var div3 = document.createElement("div");
+           div3.setAttribute("class", "column");
+
+           var delivery = document.createElement("p");
+           delivery.textContent = "$" + ele.delivery;
+
+           div3.append(delivery);
+
+
+           tr.append(div1, div2, div3);
+           document.querySelector("tbody").append(tr);
+        })
+    }
+
+    function increase(index){
+        cartArr[index].num++;
+        displayCart();
+        calculateTotal();
+    }
+
+    function decrease(index){
+        cartArr[index].num--;
+        if(cartArr[index].num == 0)
+            deleteRow(index);
+        
+        displayCart();
+        calculateTotal();
+    }
+
+    function deleteRow(index){
+        var res = cartArr.splice(index, 1);
+        localStorage.setItem("cartArr", JSON.stringify(cartArr));
+        
+        var res1 = cart.splice(index, 1);
+        localStorage.setItem("cartProducts", JSON.stringify(cart));
+        displayCart();
+        calculateTotal();
+    }
+
+    function calculateTotal(){
+        var total = 0; var quan = 0;
+        for(var i=0; i<cartArr.length; i++){
+            total += cartArr[i].price*cartArr[i].num;
+            quan += cartArr[i].num;
+        }
+        
+        document.getElementById("items").textContent = quan;
+        document.getElementById("total").textContent = total;
+    }
+
+    function check(){
+        event.preventDefault();
+        var ch = document.getElementById("promo").value;
+        console.log(ch);
+        if(ch == "masai30"){
+            var temp = document.createElement("p");
+            temp = "Congrats You are eligible for 30% off";
+            document.getElementById("Offer").append(temp);
+
+            var t = parseInt(document.getElementById("total").textContent);
+            var change = (t*3)/10;
+            document.getElementById("total").textContent = t - change;
+        }
+    } 
+</script>
