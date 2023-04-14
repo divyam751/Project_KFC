@@ -13,14 +13,14 @@ signupForm.addEventListener('submit', function(event) {
     let users = localStorage.getItem('users');
     if (users) {
         users = JSON.parse(users);
-        users.push(user);
+        users[0] = user;
         localStorage.setItem('users', JSON.stringify(users));
       } else {
         localStorage.setItem('users', JSON.stringify([user]));
       }
        alert('Your OTP is 1234');
       document.getElementById("signform").reset();
-      window.location.href = 'Index.html'
+      window.location.href = 'OTP.html'
     }
     });
 

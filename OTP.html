@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="OTP.css">
+    <title>KFC OTP PAGE</title>
+</head>
+<body>
+    <section class="wrapper">
+        <div class = "bigpare">
+            <div class = "inorup">
+                <div class = "in">Sign In /</div> 
+                <div class = "up"> Sign up</div>
+            </div>
+            <div class="Logo"> <img src="https://th.bing.com/th/id/OIP.Pr2D6m9KbQqNHWujIJNEmQHaCG?pid=ImgDet&rs=1" alt = "kfc logo"  width="80" height="18"> </div>
+            <div class="message" role="heading"> WE JUST TEXTED YOU </div>
+            <div class="message2" id = "userDetaill" > Please enter the verification code we just sent to </div>
+            <form id = "confirm_OTP" >
+            <div class="changeNo" role="heading" onclick="window.location.href = 'Signup.html'"> <u> Different Number?</u> </div>
+            <div class = "OTPdiv">
+                <input id = "box0" class = "otpbx" type = "tel" maxlength="1" style="border-bottom: 2px solid rgb(255, 46, 0);" required>
+                <input id = "box1" class = "otpbx2" type = "tel" maxlength="1" style="border-bottom: 2px solid rgb(255, 46, 0);" required>
+                <input id = "box2" class = "otpbx2" type = "tel" maxlength="1" style="border-bottom: 2px solid rgb(255, 46, 0);" required>
+                <input id = "box3" class = "otpbx2" type = "tel" maxlength="1" style="border-bottom: 2px solid rgb(255, 46, 0);" required>
+            </div>
+            <div class="Resend" onclick="alert('Your OTP is 1234')"> <u>Resend the Code</u> </div>
+            <input type="submit" class="sendcod" id ="submit_OTP" value="Submit" >
+            </form>
+        </div>
+    </section> 
+</body>
+<script src = 'OTP.js' > </script>
+</html>
