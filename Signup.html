@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="signupstyle.css">
+    <title>KFC SIGN IN</title>
+</head>
+<body>
+    <section class="wrapper">
+    <div class = "bigpare">
+        <div class = "inorup">
+            <div class = "in">Sign In /</div> 
+            <div class = "up"> Sign up</div>
+        </div>
+        <div class="Logo" onclick="window.location.href = './LandingPage/index.html'"> <img src="https://th.bing.com/th/id/OIP.Pr2D6m9KbQqNHWujIJNEmQHaCG?pid=ImgDet&rs=1" alt = "kfc logo"  width="80" height="18"> </div>
+        <div class="message" role="heading"> LET’S SIGN IN OR CREATE ACCOUNT WITH YOUR PHONE NUMBER! </div>
+        <div class = "form signup" id = "formSig">
+        <form action="#" id = "signform">
+        <input type="tel" class="phoneNo" id = "Phone" placeholder="Phone Number*" autocomplete="tel" required ="" maxlength="10" required style="color: rgb(255, 46, 0);">
+        <div class="termsandcon"> By “logging in to KFC”, you agree to our <u><b>Privacy Policy </b></u> and <u><b>Terms & Conditions.</b></u></div>
+        <input type="submit" class="sendcod" id ="submit" value="Send Me a Code"> 
+        </form>
+        </div>
+        <div class="or"> or </div>
+    <div class ="skipp">    
+    <div class="skip" onclick="guest()">Skip, Continue As Guest</div>
+    </div>
+    </div>
+</section>
+</body>
+<script src = 'signup.js' > </script>
+</html>
