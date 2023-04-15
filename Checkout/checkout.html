@@ -1,26 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Checkout</title>
-    <link rel="stylesheet" type="text/css" href="./checkout.css">
+    <title>KFC checkout</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./checkout.css" />
+    <script src="https://kit.fontawesome.com/63c7c4276d.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div class="checkout-container">
-        <h1>Checkout</h1>
-        <form id="checkout-form">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            <label for="address">Address</label>
-            <input type="text" id="address" name="address" required>
-            <label for="city">City</label>
-            <input type="text" id="city" name="city" required>
-            <label for="zip">Zip Code</label>
-            <input type="text" id="zip" name="zip" required>
-            <input type="submit" value="Place Order">
-        </form>
+    <nav>
+        <div class="nav__container">
+            <button>Back to Card</button>
+            <h1>KFC</h1>
+            <div class="nav__needHelp">
+                <p>Need help?</p>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main__container">
+        <div class="left">
+            <div class="decor">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="heading">
+                <h1>CHECKOUT</h1>
+
+                <div>
+                    <i class="fa-solid fa-lock"></i>
+                    <p>Secure Checkout</p>
+                </div>
+            </div>
+
+            <div class="box first">
+                <div>
+                    <i class="fa-sharp fa-solid fa-location-dot"></i>
+                    <p>Change</p>
+                </div>
+                <i class="fa-solid fa-clock"></i>
+            </div>
+
+            <div class="box second">
+                <i class="fa-sharp fa-solid fa-circle-dot"></i>
+                <p>Walk-In the Store</p>
+            </div>
+
+            <div class="box contact">
+                <div class="hading">
+                    <h1 class="contact__heading">CONTACT INFO</h1>
+                    <button>sign in</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <script src="./checkout.js"></script>
 </body>
+
 </html>
