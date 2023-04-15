@@ -1,0 +1,398 @@
+@media (min-width: 1024px) {
+    .body {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .inorup {
+       
+        margin-left: 46.2%;
+        padding: 1%;
+        display: flex;
+        margin-top: 6%;
+        height: 10%;
+        width: 10%;
+        color: #494949;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        font-family: 'National2-Medium';
+    }
+
+    .bigpare {
+        display: contents;
+        height: 100%;
+        width: 90%;
+        background-color:black;
+    }
+
+    .Logo {
+        text-align: center;
+        margin-top: 2.5%;
+        cursor: pointer;
+
+    }
+    .message {
+        margin-top: 3%; 
+        font-weight: bold;
+        text-align: center;
+        font-family: 'National2CondensedWeb-Medium';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: #202124;
+    }
+
+    .termsandcon {
+        margin-left: 24.5%;
+        margin-top: 2%; 
+        font-family: 'National 2 Regular';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 20px;
+         color: #202124;
+    }
+
+    .phoneNo{
+        margin-left: 24.5%;
+        margin-top: 4%;
+        width: 45%; 
+        border: none;
+        border-bottom: 1px solid #202124;
+        outline: none;
+        font-family: 'National 2 Regular';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: -0.1px;
+        color: #202124;
+        padding-bottom: 0.7%;
+        text-indent: 0px;
+        text-shadow: none;
+        display: inline-block;
+        background-color: field;
+        cursor: text;
+    }
+
+
+    .sendcod{
+        margin-left: 46%;
+        margin-right: 45% ;
+        text-align: center;
+        margin-top: 2.5%; 
+        height: 8%;
+        border: none;
+        outline: none;
+        border-radius: 200px;
+        cursor: pointer;
+        color: #ffffff;
+        font-size: 16px;
+        background-color: #202124;
+        display: flexbox;
+        padding: 1%;
+    }
+
+
+    .or{
+        text-align: center;
+        margin-top: 2.5%;   
+    }
+
+    .skipp{
+        margin-left: 28%;
+        margin-top: 2.5%;  
+        width: 45%;
+        border-style: ridge;
+        align-items: center;
+        outline: none;
+        border-radius: 66px;
+        border: 1px solid #202124;
+        cursor: pointer;
+    
+    }
+
+    .skip{
+        margin-left: 37.5%;
+        margin-top: 2%;  
+        margin-bottom: 2%;
+        width: 45%;
+        background: #ffffff;
+        color: #202124;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 30px;
+        font-family: 'National 2 Regular';
+    }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+    .body {
+        display: flex;
+        flex-wrap: wrap; 
+    }
+    
+    .inorup {
+        text-align: center;
+       margin-top: 4vw;
+        display: block;
+        color: #494949;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        font-family: 'National2-Medium';
+        display: flex;
+        margin-left: 48%;
+    }
+    .bigpare {
+        display: contents;
+        height: 100%;
+        width: 90%;
+        background-color:black;
+       
+    }
+    .Logo {
+        margin-left: 48%;
+        margin-top: 15vw;
+        cursor: pointer;
+
+    }
+    .message {
+        font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 13%;
+    margin-top: 8%;
+    text-align: center;
+    text-align: center;
+    font-family: 'National2CondensedWeb-Medium';
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #202124;
+    font-style: normal;
+    font-weight: bold;
+    }
+
+    .termsandcon {
+    font-family: 'National 2 Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: #202124;
+    margin-left: 10%;
+    margin-top: 2.5%;
+    }
+
+    .phoneNo{
+        margin-left: 10%;
+        margin-top: 4%;
+        width: 77%; 
+        border: none;
+        border-bottom: 1px solid #202124;
+        outline: none;
+        font-family: 'National 2 Regular';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: -0.1px;
+        color: #202124;
+        padding-bottom: 0.7%;
+        text-indent: 0px;
+        text-shadow: none;
+        display: inline-block;
+        background-color: field;
+        cursor: text;
+
+    }
+
+
+    .sendcod{
+        margin-left: 10%;
+        width: 78%;
+        text-align: center;
+        margin-top: 5%; 
+        height: 8%;
+        border: none;
+        outline: none;
+        border-radius: 200px;
+        cursor: pointer;
+        color: #ffffff;
+        font-size: 16px;
+        background-color: #202124;
+        display: flexbox;
+        padding: 1%;
+    }
+
+
+    .or{
+        text-align: center;
+        margin-top: 5%;   
+    }
+
+    .skipp{
+        margin-left: 25%;
+        margin-top: 5%;  
+        width: 45%;
+        border-style: ridge;
+        align-items: center;
+        outline: none;
+        border-radius: 66px;
+        border: 1px solid #202124;
+        cursor: pointer;
+    
+    }
+
+    .skip{
+        margin-left: 37.5%;
+        margin-top: 2%;  
+        margin-bottom: 2%;
+        width: 45%;
+        background: #ffffff;
+        color: #202124;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 30px;
+        font-family: 'National 2 Regular';
+    }
+}
+
+@media (max-width: 600px) {
+    .body {
+        display: flex;
+        flex-wrap: wrap; 
+    }
+    
+    .inorup {
+        text-align: center;
+        margin-top: 4vw;
+        display: block;
+        color: #494949;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 4.5vw;
+        line-height: 24px;
+        font-family: 'National2-Medium';
+        display: flex;
+        margin-left: 38%;
+    }
+    .bigpare {
+        display: contents;
+        height: 100%;
+        width: 90%;
+        background-color:black;
+       
+    }
+    .Logo {
+        margin-left: 43%;
+        margin-top: 15vw;
+        cursor: pointer;
+
+    }
+    .message {
+        font-size: 3vw;
+    line-height: 22px;
+    margin-bottom: 13%;
+    margin-top: 30vw;
+    text-align: center;
+    text-align: center;
+    font-family: 'National2CondensedWeb-Medium';
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #202124;
+    font-style: normal;
+    font-weight: bold;
+    }
+
+    .termsandcon {
+    font-family: 'National 2 Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: #202124;
+    margin-left: 5%;
+    margin-top: 4%;
+    }
+
+    .phoneNo{
+        margin-left: 5%;
+        margin-top: 4%;
+        width: 77%; 
+        border: none;
+        border-bottom: 1px solid #202124;
+        outline: none;
+        font-family: 'National 2 Regular';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: -0.1px;
+        color: #202124;
+        padding-bottom: 0.7%;
+        text-indent: 0px;
+        text-shadow: none;
+        display: inline-block;
+        background-color: field;
+        cursor: text;
+
+    }
+
+
+    .sendcod{
+        margin-left: 5%;
+        width: 78%;
+        text-align: center;
+        margin-top: 10%; 
+        height: 8%;
+        border: none;
+        outline: none;
+        border-radius: 200px;
+        cursor: pointer;
+        color: #ffffff;
+        font-size: 16px;
+        background-color: #202124;
+        display: flexbox;
+        padding: 1%;
+    }
+
+
+    .or{
+        text-align: center;
+        margin-top: 70%;   
+    }
+
+    .skipp{
+        margin-left: 18%;
+        margin-top: 4%;  
+        width: 70%;
+        border-style: ridge;
+        outline: none;
+        border-radius: 66px;
+        border: 1px solid #202124;
+        cursor: pointer;
+        align-items: center;
+    
+    }
+
+    .skip{
+        margin-left: 15vw;
+        font-size: 2.5vw;
+        margin-top: 2%;  
+        margin-bottom: 2%;
+        width: 45%;
+        background: #ffffff;
+        color: #202124;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 5vw;
+        font-family: 'National 2 Regular';
+        text-align: center;
+        
+    }
+}
