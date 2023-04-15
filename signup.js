@@ -35,6 +35,6 @@ function guest(){
       } else {
         localStorage.setItem('users', JSON.stringify([user]));
       }
-      window.location.href = 'Index.html'
+      window.location.href = './LandingPage/index.html'
 
 }

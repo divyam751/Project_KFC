@@ -18,7 +18,7 @@ signupForm.addEventListener('submit', function(event) {
       }
        alert('Signup Succesfull');
       document.getElementById("Uerdetails").reset();
-      window.location.href = 'Index.html'
+      window.location.href = './LandingPage/index.html'
     });
 
 
@@ -32,6 +32,6 @@ function guest(){
       } else {
         localStorage.setItem('users', JSON.stringify([user]));
       }
-      window.location.href = 'Index.html'
+      window.location.href = './LandingPage/index.html'
 
 }
