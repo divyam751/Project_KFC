@@ -125,6 +125,15 @@ body {
   /* padding-left: 20%; */
   /* border: 4px solid; */
 }
+
+#welcome {
+    margin-top: 1%;
+}
+
+#three {
+  margin-top: 10%;
+}
+ 
 #three > div {
   width: 10px;
   height: 100%;
